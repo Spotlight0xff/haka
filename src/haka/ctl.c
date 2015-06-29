@@ -454,7 +454,7 @@ void redirect_logger_destroy(struct logger *_logger)
 	free(logger);
 }
 
-struct redirect_logger *redirect_logger_create(d)
+struct redirect_logger *redirect_logger_create(int d)
 {
 	struct redirect_logger *logger = malloc(sizeof(struct redirect_logger));
 	if (!logger) {
@@ -508,7 +508,7 @@ void redirect_alerter_destroy(struct alerter *_alerter)
 	free(alerter);
 }
 
-struct redirect_alerter *redirect_alerter_create(d)
+struct redirect_alerter *redirect_alerter_create(int d)
 {
 	struct redirect_alerter *alerter = malloc(sizeof(struct redirect_alerter));
 	if (!alerter) {
